@@ -8,7 +8,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_file_dialog/flutter_file_dialog.dart';
 
-
 class LogPage extends StatefulWidget {
   const LogPage({super.key});
 

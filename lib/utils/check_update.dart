@@ -18,6 +18,7 @@ Future<void> checkUpdate(bool manualCheck) async {
   Prefs().lastShowUpdate = DateTime.now();
 
   BuildContext context = navigatorKey.currentContext!;
+
   Response response;
   try {
     response = await Dio()

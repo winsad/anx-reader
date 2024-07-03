@@ -61,9 +61,10 @@ class _SubAdvancedSettingsState extends State<SubAdvancedSettings> {
               },
             ),
             SettingsTile.navigation(
-                leading: const Icon(Icons.bug_report),
-                title: Text(context.settingsAdvancedLog),
-                onPressed: onLogPressed),
+              leading: const Icon(Icons.bug_report),
+              title: Text(context.settingsAdvancedLog),
+              onPressed: onLogPressed,
+            ),
           ],
         ),
       ],

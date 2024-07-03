@@ -48,9 +48,9 @@ class SubAppearanceSettings extends StatelessWidget {
         SettingsSection(
           title: Text(context.settingsAppearanceTheme),
           tiles: [
-            CustomSettingsTile(
+            const CustomSettingsTile(
                 child: Padding(
-              padding: const EdgeInsets.fromLTRB(20, 8, 20, 8),
+              padding: EdgeInsets.fromLTRB(20, 8, 20, 8),
               child: ChangeThemeMode(),
             )),
             SettingsTile.navigation(
@@ -83,6 +83,7 @@ void showLanguagePickerDialog(BuildContext context) {
     dialogOption('System', '', saveToPrefs),
     dialogOption('简体中文', 'zh', saveToPrefs),
     dialogOption('English', 'en', saveToPrefs),
+    dialogOption('Khmer', 'km', saveToPrefs),
   ];
   showSimpleDialog(title, saveToPrefs, children);
 }
